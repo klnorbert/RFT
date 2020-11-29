@@ -256,6 +256,7 @@ public class BlackJack {
       * adatok mentése a jatszo[] játszó félnek a lapjai
       * lapjatsz játszó félnek a lapjainak a száma használatával történik
       * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+      * @author Klement Norbert
       */   
     public void huz() throws BlackJack_kivétel{
         if(this.lapjatsz==0){
@@ -282,6 +283,7 @@ public class BlackJack {
      * használatával történik
      * Black Jacket is figyelembe veszi
      * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Klement Norbert
      */
     public void end() throws BlackJack_kivétel {
         Random rn = new Random();

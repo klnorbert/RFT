@@ -27,12 +27,13 @@ public class BlackJack {
     /**
      * Az oszto kezében lévő kártyát viszaadja és egy X-et
      * @return a oszto allasat adja visza stringben egy erték eltakarásával
-     * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @throws BlackJack_kivétel  ha nem kezdte volna el a játékot akkor hibát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Ördögh László Dániel
      */
     public String Oszto_kez()throws BlackJack_kivétel{
         
         if(laposzt==0){
-            throw new BlackJack_kivétel("Még nem kezdődöt ell a játék!");
+            throw new BlackJack_kivétel("Még nem kezdődöt el a játék!");
         }
         else{
         String visza = "";
@@ -63,9 +64,10 @@ public class BlackJack {
     
     
     /**
-     * Az oszto kezében lévő kártyákat viszaadja
+     * Az oszto kezében lévő kártyákat visszaadja
      * @return a oszto allasat adja visza stringben
-     * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @throws BlackJack_kivétel  ha nem kezdte volna el a játékot akkor hibát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Ördögh László Dániel
      */
     
     private String Oszto_kez_teljes()throws BlackJack_kivétel{
@@ -99,15 +101,16 @@ public class BlackJack {
     }
     
     /**
-     * A játszó kezében lévő kártyákat viszadja
-     * @return a jatszo allasat adja visza stringben
-     * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * A játszó kezében lévő kártyákat visszaadja
+     * @return a jatszo allasat adja vissza stringben
+     * @throws BlackJack_kivétel  ha nem kezdte volna el a játékot akkor hibát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Ördögh László Dániel
      */
     
     public String Jatszo_kez()throws BlackJack_kivétel{
         
         if(lapjatsz==0){
-            throw new BlackJack_kivétel("Még nem kezdődöt ell a játék!");
+            throw new BlackJack_kivétel("Még nem kezdődöt el a játék!");
         }
         else{
         String visza = "";

@@ -9,7 +9,7 @@ import java.util.Scanner;
  * <h1>BlackJack projekt</h1>
  * Ez a projekt elsődleges osztálya
  * 
- * @author Klement Norbert
+ * @author Klement Norbert, Nagy Bence Zoltán, Ördögh László Dániel
  */
 public class BlackJack {
     /**
@@ -142,7 +142,8 @@ public class BlackJack {
     /**
      * Viszaadja a jelenlegi állást
      * @return viszaadja a jelenlegi állás stringben
-     * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @throws BlackJack_kivétel  ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmiű
+     * @author Nagy Bence Zoltán
      */
     
     public String Allas()throws BlackJack_kivétel{
@@ -166,6 +167,7 @@ public class BlackJack {
      * Viszaadja a jelenlegi állást eltakaras nelkül
      * @return viszaadja a jelenlegi állás stringben eltakarás nélkül
      * @throws BlackJack_kivétel ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Nagy Bence Zoltán
      */
     private String Vegso_Allas()throws BlackJack_kivétel{
         if(this.jatszo==null){
@@ -189,6 +191,7 @@ public class BlackJack {
      * @param db hány db kártya van a kezében
      * @return a kártyák számbeli értékének az öszege
      * @throws BlackJack_kivétel ha nem kezdte volna ell a játékot akkor hibbát dobjon fel hogy nincs az osztó és a kezdő kezében semmi
+     * @author Nagy Bence Zoltán
      */
     
     private int Allas_szam(int kézben[],int db)throws BlackJack_kivétel{
